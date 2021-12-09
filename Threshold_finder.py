@@ -1,12 +1,3 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Oct 20 12:27:19 2021
-
-@author: frfty
-"""
-
-import cv2
-
 # File name of image 
 img_name = '73tif.tif'
 
@@ -31,6 +22,7 @@ bw_blur = 1
 # =============================================================================
 # Read the original image
 # =============================================================================
+import cv2
 img = cv2.imread(img_name)
 imgcopy = img.copy()
 
