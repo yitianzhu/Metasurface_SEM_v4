@@ -1,4 +1,4 @@
-# File name of image 
+# String File name of image 
 img_name = '73tif.tif'
 
 # Threshold for Canny edge detection; higher number = greater threshold
