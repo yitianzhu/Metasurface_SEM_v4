@@ -1,18 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Sun Oct 24 19:14:56 2021
-
-@author: frfty
-"""
-
-import cv2
-import numpy as np 
 
 # =============================================================================
 # FOR THE USER TO TYPE IN
 # =============================================================================
 
-# File name of image 
+# String File name of image 
 img_name = '73tif.tif'
 
 # Detected edge within how many pixels of expected edge?
@@ -22,18 +13,20 @@ accuracy=5
 # Threshold for Canny edge detection; higher number = greater threshold
 # Note that when the edge_blur value is high, use lower threshold 
 # greater threshold means fewer edges detected but also removes noise
+# This number is usually an integer between 10 and 200
 threshold= 30
 
 # blur for canny edge detection; Higher number = more blur
 # when the SEM image visually looks noisy/blurry, use a higher number
 # when the SEM image looks sharp, use a lower number
+# This number should be an odd integer 
 edge_blur = 13
 
 # blur for binarizing the image; higher number = more blur 
-# Keeping the bw_blur value low is fine. 
+# Keeping the bw_blur value low is fine. This number should be an odd integer
 bw_blur = 1
 
-# Number of nanometers per pixel; found in SEM information text file 
+# Number of nanomeers per pixel; found in SEM information text file 
 PixelSize=11.018
 
 # Number of BMP files you will have
@@ -49,8 +42,10 @@ percent_minimum = 0
 # =============================================================================
 # Read the original image
 # =============================================================================
-img = cv2.imread(img_name)
-imgcopy = img.copy()
+import cv2
+import numpy as np 
+
+img = cv2.imread(img_name)imgcopy = img.copy()
 cv2.imshow('Original', img)
 
 # =============================================================================
