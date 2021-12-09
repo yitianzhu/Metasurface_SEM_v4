@@ -4,15 +4,17 @@ img_name = '73tif.tif'
 # Threshold for Canny edge detection; higher number = greater threshold
 # Note that when the edge_blur value is high, use lower threshold 
 # greater threshold means fewer edges detected but also removes noise
+# This number is usually an integer between 10 and 200
 threshold= 30
 
 # blur for canny edge detection; Higher number = more blur
 # when the SEM image visually looks noisy/blurry, use a higher number
 # when the SEM image looks sharp, use a lower number
+# This number should be an odd integer 
 edge_blur = 13
 
 # blur for binarizing the image; higher number = more blur 
-# Keeping the bw_blur value low is fine. 
+# Keeping the bw_blur value low is fine. This number should be an odd integer
 bw_blur = 1
 
 # =============================================================================
