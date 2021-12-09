@@ -1,10 +1,6 @@
 # File name of image 
 img_name = '73tif.tif'
 
-# Detected edge within how many pixels of expected edge?
-# Larger number is more forgiving to error
-accuracy=5
-
 # Threshold for Canny edge detection; higher number = greater threshold
 # Note that when the edge_blur value is high, use lower threshold 
 # greater threshold means fewer edges detected but also removes noise
