@@ -82,6 +82,6 @@ bmp_pixsize = 75
 # do not display results for a metaatom if its match percent is below this filter value
 percent_minimum = 0
 ```
-9) The computer will generate multiple images: Original SEM, Binarized image, Canny Edge Detection, Results. See results below: 
+9) The computer will generate multiple images: Original SEM, Binarized image, Canny Edge Detection, Results. See a sample of the Results image below: 
 <img src="https://github.com/yitianzhu/Metasurface_SEM_v4/blob/main/images/Example-Results.PNG" width=50% height=50%>
 
