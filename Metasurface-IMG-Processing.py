@@ -6,10 +6,6 @@
 # String File name of image 
 img_name = '73tif.tif'
 
-# Detected edge within how many pixels of expected edge?
-# Larger number is more forgiving to error
-accuracy=5
-
 # Threshold for Canny edge detection; higher number = greater threshold
 # Note that when the edge_blur value is high, use lower threshold 
 # greater threshold means fewer edges detected but also removes noise
@@ -26,17 +22,25 @@ edge_blur = 13
 # Keeping the bw_blur value low is fine. This number should be an odd integer
 bw_blur = 1
 
+# Detected edge within how many pixels of expected edge?
+# Larger number is more forgiving to error
+# This is an integer
+accuracy=5
+
 # Number of nanomeers per pixel; found in SEM information text file 
+# This can be a floating point number
 PixelSize=11.018
 
 # Number of BMP files you will have
 # Note that BMP files should be named 1.bmp 2.bmp 3.bmp etc
+# Integer 
 num_bmp = 16
 
 # BMP Pixel Size, in nanometers per pixel 
+# Can be floating point number or integer
 bmp_pixsize = 75
 
-# do not display if match percent is below this filter value
+# do not display results for a metaatom if its match percent is below this filter value
 percent_minimum = 0
 
 # =============================================================================
