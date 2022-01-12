@@ -1,4 +1,4 @@
-# Metasurface_SEM_v4
+# Metasurface SEM characterization - arbitrary geometry layout
 Measures the accuracy of fabricating a metaatom by comparing the SEM image with the original design
 
 ## Sample output
